@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Result Page</title>
+    <!--{% load staticfiles %}-->
+
+  </head>
+  <body>
+
+        <h1>BOOK INFORMATION SUBMITTED!</h1>
+        {% for book in books %}
+        
+        <table>
+          <tbody>
+            <tr>
+              <td>TITLE:</td>
+              <td>{{ book.title_name }}</td>
+            </tr>
+            <tr>
+              <td>AUTHOR:</td>
+              <td>{{ book.author_name }}</td>
+            </tr>
+            <tr>
+              <td>PUBLISHED:</td>
+              <td>{{ book.published_name }}</td>
+            </tr>
+            <tr>
+              <td>CATEGORY:</td>
+              <td>{{ book.category_name }}</td>
+            </tr>
+            <tr>
+              <td>IN_PRINT:</td>
+              <td>{{ book.in_print }}</td>
+            </tr>
+          </tbody>
+        </table>
+        {% endfor %}
+        
+        <form class="" action="/">
+          <input type="submit" name="" value="Go Back">
+        </form>
+        
+  </body>
+</html>

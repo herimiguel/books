@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BOOKS</title>
+</head>
+<body>
+    <h1>BOOKS!</h1>
+
+     <div id="wrapper">
+      <form action="/submit_survey" method="post">
+        {% csrf_token %}
+        <!--<div class="row">-->
+          <label for="title_name">Title:</label>
+          <input type="text" name="title_name" value="">
+        <br>
+        
+        <!--</div>
+         <div class="row">-->
+          <label for="author_name">Author:</label>
+          <input type="text" name="author_name" value="">
+        <!--</div>
+         <div class="row">-->
+        <br>
+        
+          <label for="published_name">Published:</label>
+          <input type="text" name="published_name" value="">
+        <br>
+          
+        <!--</div>
+         <div class="row">-->
+          <label for="category_name">Category:</label>
+          <input type="text" name="category_name" value="">
+        <br>
+          <label for="in_print">in_input:</label>
+          <input type="text" name="in_print" value="">
+        <br>
+        <br>
+        <input type="submit" name="" value="Submit">
+      </form>
+    </div>
+
+</body>
+</html>
